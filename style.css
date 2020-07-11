@@ -1,0 +1,86 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("istockphoto-470674388-612x612.jpg");
+    background-position: center;
+    background-size: cover;}
+.container{
+    padding: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color:black;
+}
+.main_screen{
+    margin: 0;
+    background-image: radial-gradient(circle, #ffffff, #dcdbdc, #bab8b9, #999697, #7a7676);    font-size: 70px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+
+}
+.main_screen span{
+    display: inline-block;
+    width: 85px;
+    text-align: center;
+    
+}
+.buttons{
+    display: flex;
+    margin: 50px -5px 0;
+    background-color: #0f0a0a;
+    border-radius: 5px;
+    padding: 15px;
+}
+.buttons button{
+    flex: 1;
+    margin: 0 5px;
+    font-size: 22px;
+    color:#1a0000;
+    font-weight: bold;
+    cursor: pointer;
+    border:0.5px solid black;
+    border-radius: 5px;
+
+}
+.buttons button:hover{
+    background-color: #A49D9D;
+    color: black;
+}
+
+
+@media screen and (min-width: 401px) {
+    #minutes{
+      font-size: 70px;
+    }
+    #seconds{
+      font-size: 70px;
+    }
+    #milisec{
+        font-size: 70px;
+    }
+    .main_screen{
+        font-size: 70px;
+    }
+  }
+  
+
+  @media screen and (max-width: 400px) {
+    #minutes{
+        font-size: 37px;
+      }
+      #seconds{
+        font-size: 37px;
+      }
+      #milisec{
+        font-size: 37px;
+      }
+      .main_screen{
+        font-size: 37px;
+    }
+  }
